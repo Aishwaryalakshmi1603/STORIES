@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to News</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="keywords">
+        <meta content="Bootstrap News Template - Free HTML Templates" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+
+	<style>
+	title1 {
+		font-size: 25px;
+		color: black;
+		background-color: lightgrey;
+	}
+	box {
+		background-color: lightgrey;
+	}
+
+	</style>
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+
+        <!-- Top Bar Start -->
+
+        <!-- Brand Start -->
+        <div class="brand">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="b-search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+
+                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        </div>
+                        <div class="social ml-auto">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        <!-- Category News Start-->
+   <div class="cat-news">
+       <div class="container">
+           <div class="row">
+
+       </div>
+   </div><br><br<
+
+
+   <!-- Category News End-->
+<div class="container">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+ <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+ <li data-target="#myCarousel" data-slide-to="1"></li>
+ <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+ <div class="item active">
+   <img src="img/banner1.jpg" alt="Los Angeles" style="width:11000px;">
+ </div>
+
+ <div class="item">
+   <img src="img/banner2.jpg" alt="Chicago" style="width:100%;">
+ </div>
+
+ <div class="item">
+   <img src="img/banner3.jpg" alt="New york" style="width:100%;">
+ </div>
+</div>
+
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+ <span class="glyphicon glyphicon-chevron-left"></span>
+ <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" data-slide="next">
+ <span class="glyphicon glyphicon-chevron-right"></span>
+ <span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+
+             <!-- Category News Start-->
+        <div class="cat-news">
+            <div class="container">
+                <div class="row">
+
+            </div>
+        </div>
+
+
+        <!-- Category News End-->
+
+        <!-- Category News Start-->
+        <div class="cat-news">
+            <div class="container">
+                <div class="row">
+
+
+
+
+
+
+					   <div class="col-md-6">
+                        <h2>Latest Stories</h2>
+                        <div class = "box">
+                          <div class = "title1">
+
+						<p class="latest1"> This is the news</p>
+
+						<p class="latest1info">  This is the short news</p>
+
+            <div class="input">
+
+      <span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+    </div>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+
+      <div class="container" >
+    <div class="card">
+  <p class="content">hi</p>
+    </div>
+  </div>
+
+
+
+    </div></div></div></div>
+
+						<div class = "title1">
+						<div class = "box">
+						<p class="latest2"> This is the news</p>
+
+						<p class="latest2info">  This is the short news</p>
+
+            <div class="input">
+
+      <span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+    </div>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+
+      <div class="container" >
+    <div class="card">
+  <p class="content">hi</p>
+    </div>
+  </div>
+
+
+
+    </div></div></div></div>
+
+            <div class = "title1">
+						<div class = "box">
+						<p class="latest3"> This is the news</p>
+
+						<p class="latest3info">  This is the short news</p>
+            <div class="input">
+
+      <span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+    </div>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+
+      <div class="container" >
+    <div class="card">
+  <p class="content">hi</p>
+    </div>
+  </div>
+
+
+
+    </div></div></div></div>
+    <div class = "title1">
+    <div class = "box">
+    <p class="latest4"> This is the news</p>
+
+    <p class="latest4info">  This is the short news</p>
+    <div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+<div class = "title1">
+<div class = "box">
+<p class="latest5"> This is the news</p>
+
+<p class="latest5info">  This is the short news</p>
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div></div>
+
+
+
+
+
+						 <div class="col-md-6">
+                        <h2>Top Stories</h2>
+
+                        <div class = "box">
+                          <div class = "title1">
+
+						<p class="top1"> This is the news</p>
+
+						<p class="top1info">  This is the short news</p>
+
+            <div class="input">
+
+      <span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+    </div>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+
+      <div class="container" >
+    <div class="card">
+  <p class="content">hi</p>
+    </div>
+  </div>
+
+
+
+    </div></div></div></div>
+
+
+    <div class = "box">
+      <div class = "title1">
+
+<p class="top2"> This is the news</p>
+
+<p class="top2info">  This is the short news</p>
+
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+
+<div class = "box">
+  <div class = "title1">
+
+<p class="top3"> This is the news</p>
+
+<p class="top3info">  This is the short news</p>
+
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+
+<div class = "box">
+  <div class = "title1">
+
+<p class="top4"> This is the news</p>
+
+<p class="top4info">  This is the short news</p>
+
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+
+
+<div class = "box">
+  <div class = "title1">
+
+<p class="top5"> This is the news</p>
+
+<p class="top5info">  This is the short news</p>
+
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+</div>
+                    <div class="col-md-6">
+                        <h2>Best Stories</h2>
+
+                        <div class = "box">
+                          <div class = "title1">
+
+						<p class="best1"> This is the news</p>
+
+						<p class="best1info">  This is the short news</p>
+
+            <div class="input">
+
+      <span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+    </div>
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+
+      <div class="container" >
+    <div class="card">
+  <p class="content">hi</p>
+    </div>
+  </div>
+
+
+
+    </div></div></div></div>
+
+
+    <div class = "box">
+      <div class = "title1">
+
+<p class="best2"> This is the news</p>
+
+<p class="best2info">  This is the short news</p>
+
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+
+<div class = "box">
+  <div class = "title1">
+
+<p class="best3"> This is the news</p>
+
+<p class="best3info">  This is the short news</p>
+
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+
+<div class = "box">
+  <div class = "title1">
+
+<p class="best4"> This is the news</p>
+
+<p class="best4info">  This is the short news</p>
+
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+
+
+<div class = "box">
+  <div class = "title1">
+
+<p class="best5"> This is the news</p>
+
+<p class="best5info">  This is the short news</p>
+
+<div class="input">
+
+<span style="font-size:30px;cursor:pointer;color:black;" onclick="openNav()">&#9776; view more</span>
+</div>
+
+
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+
+<div class="container" >
+<div class="card">
+<p class="content">hi</p>
+</div>
+</div>
+
+
+
+</div></div></div></div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="api.js"></script>
+
+        <!-- Category News End-->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
